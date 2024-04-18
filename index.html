@@ -1,0 +1,2219 @@
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Driverworks Reference</title>
+
+    <style media="screen">
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight .gh {
+  color: #999999;
+}
+.highlight .sr {
+  color: #f6aa11;
+}
+.highlight .go {
+  color: #888888;
+}
+.highlight .gp {
+  color: #555555;
+}
+.highlight .gs {
+}
+.highlight .gu {
+  color: #aaaaaa;
+}
+.highlight .nb {
+  color: #f6aa11;
+}
+.highlight .cm {
+  color: #75715e;
+}
+.highlight .cp {
+  color: #75715e;
+}
+.highlight .c1 {
+  color: #75715e;
+}
+.highlight .cs {
+  color: #75715e;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cpf {
+  color: #75715e;
+}
+.highlight .err {
+  color: #960050;
+}
+.highlight .gr {
+  color: #960050;
+}
+.highlight .gt {
+  color: #960050;
+}
+.highlight .gd {
+  color: #49483e;
+}
+.highlight .gi {
+  color: #49483e;
+}
+.highlight .ge {
+  color: #49483e;
+}
+.highlight .kc {
+  color: #66d9ef;
+}
+.highlight .kd {
+  color: #66d9ef;
+}
+.highlight .kr {
+  color: #66d9ef;
+}
+.highlight .no {
+  color: #66d9ef;
+}
+.highlight .kt {
+  color: #66d9ef;
+}
+.highlight .mf {
+  color: #ae81ff;
+}
+.highlight .mh {
+  color: #ae81ff;
+}
+.highlight .il {
+  color: #ae81ff;
+}
+.highlight .mi {
+  color: #ae81ff;
+}
+.highlight .mo {
+  color: #ae81ff;
+}
+.highlight .m, .highlight .mb, .highlight .mx {
+  color: #ae81ff;
+}
+.highlight .sc {
+  color: #ae81ff;
+}
+.highlight .se {
+  color: #ae81ff;
+}
+.highlight .ss {
+  color: #ae81ff;
+}
+.highlight .sd {
+  color: #e6db74;
+}
+.highlight .s2 {
+  color: #e6db74;
+}
+.highlight .sb {
+  color: #e6db74;
+}
+.highlight .sh {
+  color: #e6db74;
+}
+.highlight .si {
+  color: #e6db74;
+}
+.highlight .sx {
+  color: #e6db74;
+}
+.highlight .s1 {
+  color: #e6db74;
+}
+.highlight .s, .highlight .sa, .highlight .dl {
+  color: #e6db74;
+}
+.highlight .na {
+  color: #a6e22e;
+}
+.highlight .nc {
+  color: #a6e22e;
+}
+.highlight .nd {
+  color: #a6e22e;
+}
+.highlight .ne {
+  color: #a6e22e;
+}
+.highlight .nf, .highlight .fm {
+  color: #a6e22e;
+}
+.highlight .vc {
+  color: #ffffff;
+}
+.highlight .nn {
+  color: #ffffff;
+}
+.highlight .ni {
+  color: #ffffff;
+}
+.highlight .bp {
+  color: #ffffff;
+}
+.highlight .vg {
+  color: #ffffff;
+}
+.highlight .vi {
+  color: #ffffff;
+}
+.highlight .nv, .highlight .vm {
+  color: #ffffff;
+}
+.highlight .w {
+  color: #ffffff;
+}
+.highlight {
+  color: #ffffff;
+}
+.highlight .n, .highlight .py, .highlight .nx {
+  color: #ffffff;
+}
+.highlight .nl {
+  color: #f92672;
+}
+.highlight .ow {
+  color: #f92672;
+}
+.highlight .nt {
+  color: #f92672;
+}
+.highlight .k, .highlight .kv {
+  color: #f92672;
+}
+.highlight .kn {
+  color: #f92672;
+}
+.highlight .kp {
+  color: #f92672;
+}
+.highlight .o {
+  color: #f92672;
+}
+    </style>
+    <style media="print">
+      * {
+        -webkit-transition:none!important;
+        transition:none!important;
+      }
+      .highlight table td { padding: 5px; }
+.highlight table pre { margin: 0; }
+.highlight, .highlight .w {
+  color: #586e75;
+}
+.highlight .err {
+  color: #002b36;
+  background-color: #dc322f;
+}
+.highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+  color: #657b83;
+}
+.highlight .cp {
+  color: #b58900;
+}
+.highlight .nt {
+  color: #b58900;
+}
+.highlight .o, .highlight .ow {
+  color: #93a1a1;
+}
+.highlight .p, .highlight .pi {
+  color: #93a1a1;
+}
+.highlight .gi {
+  color: #859900;
+}
+.highlight .gd {
+  color: #dc322f;
+}
+.highlight .gh {
+  color: #268bd2;
+  background-color: #002b36;
+  font-weight: bold;
+}
+.highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+  color: #6c71c4;
+}
+.highlight .kc {
+  color: #cb4b16;
+}
+.highlight .kt {
+  color: #cb4b16;
+}
+.highlight .kd {
+  color: #cb4b16;
+}
+.highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+  color: #859900;
+}
+.highlight .sa {
+  color: #6c71c4;
+}
+.highlight .sr {
+  color: #2aa198;
+}
+.highlight .si {
+  color: #d33682;
+}
+.highlight .se {
+  color: #d33682;
+}
+.highlight .nn {
+  color: #b58900;
+}
+.highlight .nc {
+  color: #b58900;
+}
+.highlight .no {
+  color: #b58900;
+}
+.highlight .na {
+  color: #268bd2;
+}
+.highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+  color: #859900;
+}
+.highlight .ss {
+  color: #859900;
+}
+    </style>
+    <link href="stylesheets/screen-9c19b03a.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-966d6edc.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-b12a2749.js"></script>
+
+  </head>
+
+  <body class="index" data-languages="[&quot;lua&quot;]">
+    <a href="#" id="nav-button">
+      <span>
+        NAV
+        <img src="images/navbar-cad8cdcb.png" alt="" />
+      </span>
+    </a>
+    <div class="toc-wrapper">
+      <img src="images/logo-3056e635.png" class="logo" alt="" />
+        <div class="lang-selector">
+              <a href="#" data-language-name="lua">lua</a>
+        </div>
+        <div class="search">
+          <input type="text" class="search" id="input-search" placeholder="Search">
+        </div>
+        <ul class="search-results"></ul>
+      <ul id="toc" class="toc-list-h1">
+          <li>
+            <a href="#license-copyright-and-trademark" class="toc-h1 toc-link" data-title="License, Copyright, and Trademark">License, Copyright, and Trademark</a>
+          </li>
+          <li>
+            <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#introduction-proxies-commands" class="toc-h2 toc-link" data-title="Proxies (Commands)">Proxies (Commands)</a>
+                  </li>
+                  <li>
+                    <a href="#introduction-protocol-notifications" class="toc-h2 toc-link" data-title="Protocol (Notifications)">Protocol (Notifications)</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#what-s-new" class="toc-h1 toc-link" data-title="What’s New">What’s New</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-1" class="toc-h2 toc-link" data-title="What’s New in 3.4.1">What’s New in 3.4.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-4-0" class="toc-h2 toc-link" data-title="What’s New in 3.4.0">What’s New in 3.4.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-2" class="toc-h2 toc-link" data-title="What’s New in 3.3.2">What’s New in 3.3.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-1" class="toc-h2 toc-link" data-title="What’s New in 3.3.1">What’s New in 3.3.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-3-0" class="toc-h2 toc-link" data-title="What’s New in 3.3.0">What’s New in 3.3.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-3" class="toc-h2 toc-link" data-title="What’s New in 3.2.3">What’s New in 3.2.3</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-2" class="toc-h2 toc-link" data-title="What’s New in 3.2.2">What’s New in 3.2.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-1" class="toc-h2 toc-link" data-title="What’s New in 3.2.1">What’s New in 3.2.1</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-s-new-in-3-2-0" class="toc-h2 toc-link" data-title="What’s New in 3.2.0">What’s New in 3.2.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-3-1-2" class="toc-h2 toc-link" data-title="What was New in 3.1.2">What was New in 3.1.2</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-3-1-0" class="toc-h2 toc-link" data-title="What was New in 3.1.0">What was New in 3.1.0</a>
+                  </li>
+                  <li>
+                    <a href="#what-s-new-what-was-new-in-o-s-3" class="toc-h2 toc-link" data-title="What was New in O.S.3">What was New in O.S.3</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pool-capabilities" class="toc-h1 toc-link" data-title="Pool Capabilities">Pool Capabilities</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#pool-capabilities-what-was-new-in-o-s-3-example" class="toc-h2 toc-link" data-title="Example">Example</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pool-conditionals" class="toc-h1 toc-link" data-title="Pool Conditionals">Pool Conditionals</a>
+          </li>
+          <li>
+            <a href="#pool-events" class="toc-h1 toc-link" data-title="Pool Events">Pool Events</a>
+          </li>
+          <li>
+            <a href="#pool-proxy-commands" class="toc-h1 toc-link" data-title="Pool Proxy Commands">Pool Proxy Commands</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#pool-proxy-commands-set_aux_mode" class="toc-h2 toc-link" data-title="SET_AUX_MODE">SET_AUX_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-set_pool_heat_mode" class="toc-h2 toc-link" data-title="SET_POOL_HEAT_MODE">SET_POOL_HEAT_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-set_pool_pump_mode" class="toc-h2 toc-link" data-title="SET_POOL_PUMP_MODE">SET_POOL_PUMP_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-set_pool_setpoint" class="toc-h2 toc-link" data-title="SET_POOL_SETPOINT">SET_POOL_SETPOINT</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-set_spa_heat_mode" class="toc-h2 toc-link" data-title="SET_SPA_HEAT_MODE">SET_SPA_HEAT_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-set_spa_pump_mode" class="toc-h2 toc-link" data-title="SET_SPA_PUMP_MODE">SET_SPA_PUMP_MODE</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-set_spa_setpoint" class="toc-h2 toc-link" data-title="SET_SPA_SETPOINT">SET_SPA_SETPOINT</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-update_aux_item" class="toc-h2 toc-link" data-title="UPDATE_AUX_ITEM">UPDATE_AUX_ITEM</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-add_aux_item" class="toc-h2 toc-link" data-title="ADD_AUX_ITEM">ADD_AUX_ITEM</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-commands-remove_aux_item" class="toc-h2 toc-link" data-title="REMOVE_AUX_ITEM">REMOVE_AUX_ITEM</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pool-protocol-notifications" class="toc-h1 toc-link" data-title="Pool Protocol Notifications">Pool Protocol Notifications</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#pool-protocol-notifications-air_temp_changed" class="toc-h2 toc-link" data-title="AIR_TEMP_CHANGED">AIR_TEMP_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-aux_names_changed" class="toc-h2 toc-link" data-title="AUX_NAMES_CHANGED">AUX_NAMES_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-auxmode_changed" class="toc-h2 toc-link" data-title="AUXMODE_CHANGED">AUXMODE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-has_air_changed" class="toc-h2 toc-link" data-title="HAS_AIR_CHANGED">HAS_AIR_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-has_pool_changed" class="toc-h2 toc-link" data-title="HAS_POOL_CHANGED">HAS_POOL_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-has_spa_changed" class="toc-h2 toc-link" data-title="HAS_SPA_CHANGED">HAS_SPA_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-num_auxs_changed" class="toc-h2 toc-link" data-title="NUM_AUXS_CHANGED">NUM_AUXS_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-pool_pumpmodes_-list_changed" class="toc-h2 toc-link" data-title="POOL_PUMPMODES_ LIST_CHANGED">POOL_PUMPMODES_ LIST_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-pool_setpoint_changed" class="toc-h2 toc-link" data-title="POOL_SETPOINT_CHANGED">POOL_SETPOINT_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-pool_temp_changed" class="toc-h2 toc-link" data-title="POOL_TEMP_CHANGED">POOL_TEMP_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-pool_heatmode_changed" class="toc-h2 toc-link" data-title="POOL_HEATMODE_CHANGED">POOL_HEATMODE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-pool_heatmode_list_changed" class="toc-h2 toc-link" data-title="POOL_HEATMODE_LIST_CHANGED">POOL_HEATMODE_LIST_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-pump_mode_changed" class="toc-h2 toc-link" data-title="PUMP_MODE_CHANGED">PUMP_MODE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-scale_changed" class="toc-h2 toc-link" data-title="SCALE_CHANGED">SCALE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-spa_heatmode_changed" class="toc-h2 toc-link" data-title="SPA_HEATMODE_CHANGED">SPA_HEATMODE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-spa_heatmodes_list_changed" class="toc-h2 toc-link" data-title="SPA_HEATMODES_LIST_CHANGED">SPA_HEATMODES_LIST_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-spa_mode_changed" class="toc-h2 toc-link" data-title="SPA_MODE_CHANGED">SPA_MODE_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-spa_pumpmodes_list_changed" class="toc-h2 toc-link" data-title="SPA_PUMPMODES_LIST_CHANGED">SPA_PUMPMODES_LIST_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-spa_setpoint_changed" class="toc-h2 toc-link" data-title="SPA_SETPOINT_CHANGED">SPA_SETPOINT_CHANGED</a>
+                  </li>
+                  <li>
+                    <a href="#pool-protocol-notifications-spa_temp_changed" class="toc-h2 toc-link" data-title="SPA_TEMP_CHANGED">SPA_TEMP_CHANGED</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pool-proxy-ui-requests" class="toc-h1 toc-link" data-title="Pool Proxy UI Requests">Pool Proxy UI Requests</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#pool-proxy-ui-requests-get_properties" class="toc-h2 toc-link" data-title="GET_PROPERTIES">GET_PROPERTIES</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-ui-requests-get_state" class="toc-h2 toc-link" data-title="GET_STATE">GET_STATE</a>
+                  </li>
+                  <li>
+                    <a href="#pool-proxy-ui-requests-get_setup" class="toc-h2 toc-link" data-title="GET_SETUP">GET_SETUP</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#pool-proxy-variables" class="toc-h1 toc-link" data-title="Pool Proxy Variables">Pool Proxy Variables</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#pool-proxy-variables-pool-variables" class="toc-h2 toc-link" data-title="POOL VARIABLES">POOL VARIABLES</a>
+                  </li>
+              </ul>
+          </li>
+      </ul>
+        <ul class="toc-footer">
+            <li><a href='https://github.com/lord/slate'>Documentation Powered by Slate</a></li>
+        </ul>
+    </div>
+    <div class="page-wrapper">
+      <div class="dark-box"></div>
+      <div class="content">
+        <h1 id='license-copyright-and-trademark'>License, Copyright, and Trademark</h1>
+
+<p>The content contained in this repository is the intellectual property of Snap One, LLC, (formerly known as Wirepath Home Systems, LLC), and use without a valid license from Snap One is strictly prohibited. The user of this repository shall keep all content contained herein confidential and shall protect this content in whole or in part from disclosure to any and all third parties except as specifically authorized in writing by Snap One.</p>
+
+<p><strong>License and Intellectual Property Disclaimer</strong></p>
+
+<p>The content in this repository is provided in connection with Snap One products. No license, express or implied, by estoppal or otherwise, to any intellectual property rights is granted by this document or in this repository. Except as provided in Snap Oneʼs terms and conditions for the license of such products, Snap One and its affiliates assume no liability whatsoever and disclaim any express or implied warranty, relating to the sale and/or use of Snap One products including liability or warranties relating to fitness for a particular purpose, merchantability, or infringement of any patent, copyright or other intellectual property right. Snap One products are not intended for use in medical, lifesaving, or life sustaining applications.</p>
+
+<p>Information regarding third-party products is provided solely for educational purposes. Snap One is not responsible for the performance or support of third-party products and does not make any representations or warranties whatsoever regarding the quality, reliability, functionality or compatibility of these products. The reader is advised that third parties can have intellectual property rights that can be relevant to this repository and the technologies discussed herein, and is advised to seek the advice of competent legal counsel regarding the intellectual property rights of third parties, without obligation of Snap One.</p>
+
+<p>Snap One retains the right make changes to this repository or related product specifications and descriptions in this repository, at any time, without notice. Snap One makes no warranty for the use of this repository and assumes no responsibility for any errors that can appear in the repository nor does it make a commitment to update the content contained herein.</p>
+
+<p><strong>Copyright</strong></p>
+
+<p>Copyright 2023 Snap One, LLC. All rights reserved.</p>
+
+<p>The above copyright notice applies to all content in this repository unless otherwise stated explicitly herein that a third-party’s copyright applies.</p>
+
+<p>No part of this publication may be reproduced, photocopied, stored on a retrieval system, or transmitted without the express written consent of the publisher.</p>
+
+<p><strong>Trademarks</strong></p>
+
+<p>Snap One and Snap One Logo, Control4 and the Control4 logo, and DriverWorks are trademarks or registered trademarks of  Snap One, LLC. Other product and company names mentioned in this repository may be the trademarks or registered trademarks of their respective owners.</p>
+
+<p><strong> Derivative Works</strong></p>
+
+<p>To the extent that you create any “Derivative Work” (meaning any work that is based upon one or more preexisting versions of the work provided to you in this repository, such as an enhancement or modification, revision, translation, abridgement, condensation, expansion, collection, compilation or any other form in which such preexisting works may be recast, modified, transformed or adapted, explicitly including without limitation, any updates or changes to Snap One, LLC’s software code or intellectual property) such Derivative Work shall be owned by Snap One, LLC and all right, title and interest in and to each such Derivative Work shall automatically vest in Snap One, LLC. To the extent any Derivative Work does not automatically vest in Snap One, LLC by operation of law, you hereby assign such Derivative Work to Snap One, LLC with full title guarantee. Snap One, LLC shall have no obligation to grant you any right in any such Derivative Work.</p>
+
+<p><strong>Contact Us</strong></p>
+
+<p>Snap One, LLC
+11734 S. Election Road
+Salt Lake City, UT 84020 USA</p>
+
+<p><a href="www.control4.com">http://www.control4.com</a></p>
+<h1 id='introduction'>Introduction</h1>
+
+<h2 id='introduction-proxies-commands'>Proxies (Commands)</h2>
+
+<p>A proxy driver is an interface to the Control4 system for a set of devices that share common functionality. For instance, most DVD disc changers have common controls such as PLAY, STOP, PAUSE and FAST FORWARD.  The disc changer proxy allows for a common user interface to control all disc changers.  The Control4 system (Director) sends information to and receives information from the proxy drivers.  The proxy drivers send information to and receives information from the protocol drivers.
+Remember, your DriverWorks driver interacts with the proxy driver which then interacts with the system.  As a driver developer you will be relying on this proxy to provide status (notification) to the Control4 system for the device you are controlling.  You will also receive commands from the system that you will act on to control the device.  These commands and notifications are at the heart of what you will be implementing in your driver.  Essentially your driver is becoming the go-between from the Control4 system and your device with the proxy driver giving structure to the commands and notifications which you will be implementing.
+Your driver can facilitate communications with multiple types of proxies for a single device. As an example, a Security System driver will utilize both the Security proxy and the Contacts proxy. These additional proxies are configured in the &lt;connections&gt; section of the .c4z.</p>
+
+<h2 id='introduction-protocol-notifications'>Protocol (Notifications)</h2>
+
+<p>Two similar devices may have the same functionality but utilize a very different command set.  A protocol driver provides the device-specific information needed to communicate with the Control4 system.  In the case of DriverWorks, the DriverWorks driver is the protocol driver.  When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.  In the case of DriverWorks, the DriverWorks driver is the protocol driver. When combined with the device-specific.c4Z file it provides the custom code necessary to implement the 2-way device driver.</p>
+<h1 id='what-s-new'>What’s New</h1>
+
+<h2 id='what-s-new-what-s-new-in-3-4-1'>What’s New in 3.4.1</h2>
+
+<p>There were no modifications to the Proxy and Protocol Guide in conjunction with O.S. Release 3.4.1.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-4-0'>What’s New in 3.4.0</h2><h3 id='what-s-new-what-s-new-in-3-4-0-blind-proxy'>Blind Proxy</h3>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#blind-capabilities-always_send_level">always_send_level</a>. If value is true, then the SetTargetLevel commands are always sent regardless of current level values. This is useful if the blind device does not support two-way communication and is controlled outside of the Control4 operating system. </p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-camera-proxy'>Camera Proxy</h3>
+<p>Beginning with O.S. 3.4.0, camera drivers have the ability to distribute audio to devices running Navigator. If a camera supports the proper <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-audio-distribution">CODEC</a> and the camera microphone has been enabled in the appropriate interface a new audio button will appear at the bottom of the single-camera view. This will allow the user to hear live audio with the live video.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-generic-media-player-proxy'>Generic Media Player Proxy</h3>
+<p>A new capability has been added to the proxy called <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#generic-media-player-capabilities-allow_audio_pathing">allow_audio_pathing</a>. This capability is applicable in the scenario where the AV Switch proxy is included as a secondary proxy to the Generic Media Player Proxy. It is useful  when modeling streaming media devices that require minidrivers.</p>
+<h3 id='what-s-new-what-s-new-in-3-4-0-light-v2-proxy'>Light (v2) Proxy</h3>
+<p>The following color conversion functions have been modified in 3.4.0. The gamut parameter now receives a new valid string of: &quot;custom”. See the links below for more information.</p>
+
+<p>RGB functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></p>
+
+<p>HSV functions:
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a>
+- <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></p>
+
+<h2 id='what-s-new-what-s-new-in-3-3-2'>What’s New in 3.3.2</h2><h3 id='what-s-new-what-s-new-in-3-3-2-camera-proxy'>Camera Proxy</h3>
+<p><strong>Support for Dynamic Camera Streams</strong></p>
+
+<p>Camera drivers can now implement a new <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">dynamic streams API</a> to provide a list of streams that the Navigators can pick from. </p>
+<h3 id='what-s-new-what-s-new-in-3-3-2-light-v2-proxy'>Light V2 Proxy</h3>
+<p><strong>Capabilities that have been Added</strong></p>
+
+<p>A new feature has been delivered in O.S. 3.3.2 which allows dealers and customers to specify how a light&#39;s brightness behaves when the light is turned on. The functionality includes:</p>
+
+<ul>
+<li>Preset - Light turns on to a preset level.</li>
+<li>Previous - Light turns on to the previous light level.</li>
+<li>Default On - Provided for backwards compatibility and is the same as setting Preset to On.</li>
+</ul>
+
+<p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on-mode_preset">brightness_on_mode_preset</a> has been included to enable the brightness presets for &quot;On Mode&quot; behavior for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_on_mode_previous">brightness_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; brightness  behavior for a light.</p>
+
+<p>A new feature was created to allow dealers and customers to specify how a light&#39;s color behaves when a light is turned on. The functionality includes:</p>
+
+<ul>
+<li>Color Fade - Color behavior such as Dim to Warm</li>
+<li>Preset - Color changes to a preset.</li>
+<li>Previous - Color changes to the previous color value.</li>
+<li>Default On - Provided for backwards compatibility and is the same as setting Preset to On.</li>
+</ul>
+
+<p>Driver developers must opt-in to this new feature and which parts it wants to support via the following new capabilities:</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_fade">color_on_mode_fade</a> has been included to enable the Fade On &quot;On Mode&quot; behavior, such as Dim to Warm, for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_preset">color_on_mode_preset</a> has been included to enable presets for use with &quot;On Mode&quot; behavior for a light.</p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_on_mode_previous">color_on_mode_previous</a> has been included to enable the Previous On &quot;On Mode&quot; behavior for a light.</p>
+
+<p>Additionally,  the following new capabilities have been included in 3.3.2:</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_max">brightness_rate_max</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold maximum rates.</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-brightness_rate_min">brightness_rate_min</a> has been included in support of drivers without buttons. This capability allows these driver to no longer need to define click and hold minimum rates.</p>
+
+<p>A new capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_brightness_stop">supports_brightness_stop</a> has been included if a light brightness transition can be stopped during a ramp. </p>
+
+<p><strong>Capabilities that have been Deprecated</strong></p>
+
+<p>fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
+
+<p>has_fixed_ramp_rate - Use <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_min">click_rate_min</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-click_rate_max">click_rate_max</a> instead.</p>
+
+<p>num_buttons</p>
+
+<p>ramp_level</p>
+
+<p>min_max</p>
+
+<p>on_off</p>
+
+<p>buttons_are_virtual</p>
+
+<p><strong>Commands that have been Added</strong></p>
+
+<p>Note: Enforcement of valid minimum and maximum values for many Light v2 commands are being enforced in conjunction with 3.3.2. </p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-add_driver_color_preset">ADD_DRIVER_COLOR_PRESET</a> has been included to add a new driver specific color preset.</p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-delete_driver_-color_-preset">DELETE_DRIVER_COLOR_PRESET</a> has been added to remove a driver configured color preset. </p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_off">DYNAMIC_OFF</a> has been added to support UIs with an off command to pair with the DYNAMIC_ON command.</p>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-dynamic_on">DYNAMIC_ON</a> has been added to allows UI&#39;s and programming to &quot;turn on&quot; a light involving both brightness and color in a single command</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-modify_driver_color_preset">MODIFY_DRIVER_COLOR_PRESET</a> has been included to change an existing driver color preset.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_stop">SET_BRIGHTNESS_STOP</a> has been added to stop a ramp if in progress.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_stop">SET_COLOR_STOP</a> has been added to stops a ramp of color if in progress.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_on_mode">SET_BRIGHTNESS_ON_MODE</a> has been added to maintain the On preset value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default">SET_BRIGHTNESS_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_rate_default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_on_mode">SET_COLOR_ON_MODE</a>  has beed added define color on mode.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_rate_default">SET_COLOR_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to retrieve the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_rate_default">UPDATE_COLOR_RATE_DEFAULT</a> value.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_on_mode">UPDATE_BRIGHTNESS_ON_MODE</a> has been added to obtain how a light should turn on with regards to brightness.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_brightness_rate_default">UPDATE_BRIGHTNESS_RATE_DEFAULT</a> has been added to provide a default value when a rate change is not provided.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_preset">UPDATE_BRIGHTNESS_PRESET</a> has beeb added to send a command when a press is changed.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_on_mode">UPDATE_COLOR_ON_MODE</a> has been added to obtain how a light should turn on with regards to color.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_preset">UPDATE_COLOR_PRESET</a> has been added to manage On and Dim values across various brands and models of lights.</p>
+
+<p>A new command <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_color_rate_default">UPDATE_COLOR_RATE_DEFAULT</a> has been added. This command is used in conjunction with generic On/Off commands to update the color rate default value.</p>
+
+<p><strong>Commands that have been Modified</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a> command has been enhanced with new parameters to support hue, saturation and presets. Additionally, this command previously included a parameter of RATE. This parameter name has changed to LIGHT_COLOR_TARGET_RATE.</p>
+
+<p><strong>Commands that have been Deprecated</strong></p>
+
+<p>GET_LIGHT_LEVEL </p>
+
+<p>GET_CONNECTED_STATE </p>
+
+<p>GET_PROPERTIES </p>
+
+<p><strong>Conditionals that have been Added</strong></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_BRIGHTNESS</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_BRIGHTNESS_TARGET</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_COLOR_TARGET</a> </p>
+
+<p><strong>Notifications that have been Modified</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_brightness_changing">LIGHT_BRIGHTNESS_CHANGING</a> notify has been modified to include two new optional parameters: LIGHT_BRIGHTNESS_CURRENT_PRESET_ID and LIGHT_BRIGHTNESS_TARGET_PRESET_ID.</p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a> notify has been modified to include parameters for Preset IDs. Additionally, this notify previously included a parameter of RATE. This parameter name has changed to LIGHT_COLOR_TARGET_RATE.</p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a> notify has been modified to include a parameter for a Preset ID.</p>
+
+<p><strong>Variables that have been Added</strong></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables">Brightness Target Ramp Rate in Milliseconds</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-variables">Brightness Target Rate Remaining in Milliseconds</a></p>
+
+<p><strong>Variables that have been Deprecated</strong></p>
+
+<p>PRESET_LEVEL has been deprecated as the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-update_brightness_on_mode">brightness_on_mode_preset</a> capability contains this value. </p>
+
+<p><strong>Known Issue(s)</strong></p>
+
+<p><em>Color Lighting Control may not Work on Some Drivers</em></p>
+
+<p>Currently, there is a known problem with color control not working on drivers that are looking for a RATE parameter in the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET </a>command. The RATE parameter was not correctly implemented due to the limits of support for color rate ramping in previous versions. We are finalizing the changes to make this fully work in 3.3.2. As a result, the “RATE” parameter name has been changed to “LIGHT_COLOR_TARGET_RATE”.</p>
+
+<p><em>Button Link Binding for Brightness Stop Functionality not Working</em></p>
+
+<p>A defect in 3.3.2 prevents keypad buttons bound to the Proxy’s BUTTON_LINK binding for Brightness Stop from working. This will be resolved in 3.3.3.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-3-1'>What’s New in 3.3.1</h2>
+
+<p><strong>Light V2 Proxy</strong></p>
+
+<p>The capability: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance">color_trace_tolerance</a> has been modified to accept a Delta value of &gt; .01. When provided, the CIELa*b* tolerance formula is used to determining if a color is the as another color in the system.</p>
+
+<p>The following Conversion Commands have been enhanced to include an optional parameter: gamut. This parameter allows for the specification of a gamut type for use in the conversions.</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorhsvtoxy">ColorHSVtoXY</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytohsv">ColorXYtoHSV</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorrgbtoxy">ColorRGBtoXY</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands-colorxytorgb">ColorXYtoRGB</a></li>
+</ul>
+
+<p><strong>Camera Proxy</strong></p>
+
+<p>The Camera Proxy documentation has been has enhanced to include new information regarding:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Camera Streams</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Driver Support for Multiple Streams</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-camera-streams">Support for Caching URLS</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-extras-interface-library">Support for The Extras Interface Library</a> </li>
+</ul>
+
+<p>A new command: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-get_stream_urls">GET_STREAM_URLS</a> has been added. It is used to obtain URLs for a camera that does not have a constant URL like a Cloud based camera or for cameras that have a wider range of features and configurable options that can produce better customer experiences using various client</p>
+
+<p>A new notification: <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-stream_urls_ready">STREAM_URLS_READY</a> has been added. This notify is used as a follow up to a GET_STREAM_URLS Synchronous call. This Notify will let a UI know that the URL information they requested is ready. </p>
+
+<p>New capabilities added to the Camera proxy include:  </p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-dynamic_urls_use_type">dynamic_urls_use_type</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-requires_dynamic_stream_urls">requires_dynamic_stream_urls</a></li>
+</ul>
+
+<p>Dynamic Presets are now supported within the Camera Proxy.  The following preset functionality has been include: </p>
+
+<ul>
+<li>Save new presets.</li>
+<li>Change preset name.</li>
+<li>Recapture/update existing preset.</li>
+<li>Reorder presets.</li>
+<li>Delete a preset.</li>
+</ul>
+
+<p>Dynamic Presets require the following new Capability:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_dynamic_presets">has_dynamic_presets</a></li>
+</ul>
+
+<p>Dynamic Presets require the following new Notifications:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-protocol-notifications-dynamic_urls_changed">DYNAMIC_URLS_CHANGED</a></li>
+</ul>
+
+<p>Dynamic Presets require the following new Commands:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-select_preset">SELECT_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-change_preset_name">CHANGE_PRESET_NAME</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-modify_preset">MODIFY_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-delete_preset">DELETE_PRESET</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-proxy-commands-change_preset_order">CHANGE_PRESET_ORDER</a></li>
+</ul>
+
+<p>The following existing Camera Proxy capabilities are now Dynamic Capabilities:</p>
+
+<ul>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_-pan">has_pan</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_tilt">has_tilt</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_zoom">has_zoom</a></li>
+<li><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#camera-capabilities-has_home">has_home</a></li>
+</ul>
+
+<h2 id='what-s-new-what-s-new-in-3-3-0'>What’s New in 3.3.0</h2><h3 id='what-s-new-what-s-new-in-3-3-0-light-proxy-color-enhancements'>Light Proxy Color Enhancements</h3>
+<p>This release of the 3.3.0 beta Proxy and Protocol Guide has been delivered to support the Light Proxy’s new color management functionality. This includes:</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-capabilities'>Light V2 Proxy Capabilities</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_correlated_temperature_max">color_correlated_temperature_max</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_correlated_temperature_min">color_correlated_temperature_min</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_behavior">color_rate_behavior</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_max">color_rate_max</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_rate_min">color_rate_min</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-color_trace_tolerance">color_trace_tolerance</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_color">supports_color</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-capabilities-supports_color_correlated_temperature">supports_color_correlated_temperature</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-commands'>Light V2 Proxy Commands</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-commands-set_color_target">SET_COLOR_TARGET</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-conversion-commands'>Light V2 Proxy Conversion Commands</h3>
+<p>This section lists the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conversion-commands">Commands</a> used for converting to/from hue, saturation and lightness (HSV) and red, blue and green (RGB).</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-conditionals'>Light V2 Proxy Conditionals</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-conditionals">IS_COLOR</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-protocol-notifications'>Light v2 Protocol Notifications</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changed">LIGHT_COLOR_CHANGED</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-protocol-notifications-light_color_changing">LIGHT_COLOR_CHANGING</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-events'>Light V2 Proxy Events</h3>
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events">light_color_changed</a></p>
+
+<p><a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-events">light_color_changing</a></p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-v2-proxy-extras'>Light V2 Proxy Extras</h3>
+<p>New supporting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-v2-extras-interface-library">documentation</a>.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-advanced-lighting-scene-agent'>Advanced Lighting Scene Agent </h3>
+<p>New supporting <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#advanced-lighting-scene-agent">documentation</a>.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-light-driver-development-best-practices'>Light Driver Development Best Practices</h3>
+<p>A new section has been added to the Light V2 proxy content including <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#light-driver-development-best-practices">best practice recommendations</a> for light driver developers.</p>
+<h3 id='what-s-new-what-s-new-in-3-3-0-audio-video-switch-display-adjustable-bindings'>Audio Video Switch Display Adjustable Bindings</h3>
+<p>O.S. releases 3.3.0 provides the ability to hide <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#display-adjustable-av-switch-bindings">AV Switch Bindings</a> that are not being used. This feature has been provided to better manage the UI display within ComposerPro.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-3'>What’s New in 3.2.3</h2>
+
+<p><strong>Audio Equalization available on Navigators</strong></p>
+
+<p>The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#amplifier-navigator-eq">Amplifier</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#audio-video-switch-navigator-eq">AV Switch</a> Proxies have been enhanced to support the ability to display audio EQ functions on devices running Navigator. The enhancement includes a set of new Proxy Commands, Notifications and Capabilities to support this functionality.</p>
+
+<p><strong>Dynamic Transport Controls on Navigators</strong></p>
+
+<p>Audio Video drivers now have the ability to define which <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#dynamic-transport-controls-in-navigator">transport controls</a> are displayed on Navigators. This includes which buttons appear on the Button Bar as well as the Media Dashboard. This enhancement allows for the appropriate transport controls being displayed for each AV device.</p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-2'>What’s New in 3.2.2</h2>
+
+<p><em>There were no changes to this content for Operating System 3.2.2.</em></p>
+
+<h2 id='what-s-new-what-s-new-in-3-2-1'>What’s New in 3.2.1</h2>
+
+<p><em>There were no changes to this content for Operating System 3.2.1.</em></p>
+
+<p><h2 id='what-s-new-what-s-new-in-3-2-0'>What’s New in 3.2.0</h2><h3 id='what-s-new-what-s-new-in-3-2-0-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>Security Proxy</strong>
+The <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications-request_default_user_code_">REQUEST_DEFAULT_USER_CODE</a> partition notification was added as a mechanism for the protocol driver
+to initiate the communication to get that default user code upon driver update.</p></p>
+
+<p>The following Security Protocol Notifications were deprecated from the SDK: ALARM, ALARM_CLEAR, AWAY, DISARM, HOME, TROUBLE. Please see the <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-panel-notifications">Security Panel Notification</a> and <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#security-partition-notifications">Security Partition Notification</a> areas for the latest list of Notifies.</p>
+
+<p><h2 id='what-s-new-what-was-new-in-3-1-2'>What was New in 3.1.2</h2><h3 id='what-s-new-what-was-new-in-3-1-2-proxies-that-were-deprecated'>Proxies that were Deprecated** </h3>
+<p>The following Proxies were deprecated from the Proxy and Protocol Guide:</p></p>
+
+<ul>
+<li>iPod</li>
+<li>Load Controller</li>
+</ul>
+
+<p><h2 id='what-s-new-what-was-new-in-3-1-0'>What was New in 3.1.0</h2><h3 id='what-s-new-what-was-new-in-3-1-0-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>Light V2 Proxy</strong>
+light sample.c4i - A sample driver has been included to assist with better understanding the basic flow of commands from the Light Proxy as well as receiving protocol notifications. The driver can be found in the Samples directory under the root level of the DriverWorks SDK.zip file</p></p>
+
+<p><strong>Media Service Proxy</strong>
+Detail Screen Type - Information regarding the implementation of the Detail Type Screen has been added to the documentation.</p>
+
+<p><h2 id='what-s-new-what-was-new-in-o-s-3'>What was New in O.S.3</h2><h3 id='what-s-new-what-was-new-in-o-s-3-proxies-that-were-modified'>Proxies that were Modified** </h3>
+<p><strong>KeyPad Proxy</strong></p></p>
+
+<p>New Button Linking functionality has been added to the Proxy. Button Linking supports the ability of a driver interacting with a second driver using Button State and Button LED State. </p>
+
+<p><strong>Light (V2) Proxy</strong>
+LightV2 Proxy has been significantly enhanced in this release. It is recommended that Light Driver writers thoroughly review the Proxy content in this release. The changes included not only impact drivers written against OS 3. Previously delivered Light Proxy elements have been modified or in some cases deprecated. </p>
+
+<p>In OS 3, the proxy has been conceptually split into two components. The first being a Wall Control/Keypad portion and the second is a redesigned Light portion.The Light portion has been developed as a Bulb Library. The ultimate goal of the Bulb Library is to support ,more versatility for drivers to interrogate, group, control and manage individual drivers and bulbs. Bulb color, target level, minimum and maximum levels, cold start timing and other features are implemented in the Bulb Library. Dynamic Capabilities have also been added to the Light Portion. Note that all changes maintain backwards compatibility for driver side interaction. However, Navigators will have functionality deprecated due to performance reasons or improved ways of communicating with the driver.</p>
+
+<p><strong>Media Service Proxy</strong>
+Favoriting: In conjunction with the ability to &quot;Favorite&quot; Navigator UI screens in OS 3, drivers written using the Media Service Proxy can now provide the ability for end users to designate favorite media delivered through an Media Service Proxy driver such as Playlists, Albums, Tracks, Stations, Movies, TV Shows, etc. </p>
+
+<p>DashboardChanged Event: The DashboardChanged event now includes content on the use of custom icons and actions.</p>
+
+<p>Driver Notification Context Example: New code examples on have been added to the Media Service Proxy Driver Notification Prototype section in the Appendix.</p>
+
+<p><strong> Best Practices</strong>
+A new section called Best Practices has been added to the Proxy and Protocol Guide. This section contains information regarding the use cases that fall outside of the typical Proxy/Protocol driver implementation. This release contains Best Practice content on the following:</p>
+
+<p>Using the new Proxy-less command UPDATE PROPERTY. This is a non proxy-specific function that can be called from any device to change a property of any other device.</p>
+
+<p>OS 3 Navigator UI and Volume Control - Managing Volume Commands in conjunction with the use of OS 3&#39;s new volume control slider on the Control4 UI.</p>
+<h1 id='pool-capabilities'>Pool Capabilities</h1>
+
+<p>The following Capabilities are supported with the Pool Proxy:</p>
+
+<p><code>&lt;aux_types&gt;&lt;/aux_types&gt;</code>
+List of auxiliary types needed by the protocol driver. There are two types of auxiliary types supported: Toggle and List.</p>
+
+<p><code>&lt;pool_heat_modes&gt;&lt;/pool_heat_modes&gt;</code>
+xml list of pool heat modes.</p>
+
+<p><code>&lt;pool_pump_modes&gt;&lt;/pool_pump_modes&gt;</code>
+xml list of pool pump modes.</p>
+
+<p><code>&lt;spa_heat_modes&gt;&lt;/spa_heat_modes&gt;</code>
+xml list of spa heat modes.</p>
+
+<p><code>&lt;spa_ pump_modes&gt;&lt;/spa_ pump_modes&gt;</code>
+xml list of spa pump modes.</p>
+
+<p><code>&lt;temp_max&gt;&lt;/temp_max&gt;</code>
+Should be entered as Fahrenheit value, it is automatically adjusted to Celsius when the pool is set to Celsius.</p>
+
+<p><code>&lt;temp_min&gt;&lt;/temp_min&gt;</code>
+Should be entered as Fahrenheit value, it is automatically adjusted to Celsius when the pool is set to Celsius.</p>
+
+<p><code>&lt;provides_aux_list&gt;&lt;/provides_aux_list&gt;</code>
+Should be true (false by default) when the pool controller device provides aux list to the driver.</p>
+
+<p>This capability disables name and type changes in Auxiliary Controls card in Composer Pro.</p>
+
+<h3 id='pool-capabilities-what-was-new-in-o-s-3-example'>Example</h3>
+
+<p>The example capabilities XML is from the Jandy Aqualink driver.</p>
+
+<div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;capabilities&gt;</span>
+     <span class="nt">&lt;provides_aux_list&gt;</span>True<span class="nt">&lt;/provides_aux_list&gt;</span>
+         <span class="nt">&lt;pool_pumpmodes&gt;</span>Off,On<span class="nt">&lt;/pool_pumpmodes&gt;</span>
+         <span class="nt">&lt;spa_pumpmodes&gt;</span>Off,On<span class="nt">&lt;/spa_pumpmodes&gt;</span>
+         <span class="nt">&lt;temp_min&gt;</span>34<span class="nt">&lt;/temp_min&gt;</span>
+         <span class="nt">&lt;temp_max&gt;</span>104<span class="nt">&lt;/temp_max&gt;</span>
+         <span class="nt">&lt;pool_heat_modes&gt;</span>
+               <span class="nt">&lt;mode&gt;</span>
+                    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+                    <span class="nt">&lt;text&gt;</span>Heater<span class="nt">&lt;/text&gt;</span>
+                    <span class="nt">&lt;command&gt;</span>set_pool_heater<span class="nt">&lt;/command&gt;</span>
+               <span class="nt">&lt;/mode&gt;</span>
+               <span class="nt">&lt;mode&gt;</span>
+                    <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+                    <span class="nt">&lt;text&gt;</span>Solar Heater<span class="nt">&lt;/text&gt;</span>
+                    <span class="nt">&lt;command&gt;</span>set_solar_heater<span class="nt">&lt;/command&gt;</span>
+               <span class="nt">&lt;/mode&gt;</span>
+          <span class="nt">&lt;/pool_heat_modes&gt;</span>
+          <span class="nt">&lt;spa_heat_modes&gt;</span>
+               <span class="nt">&lt;mode&gt;</span>
+                    <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+                    <span class="nt">&lt;text&gt;</span>Heater<span class="nt">&lt;/text&gt;</span>
+                    <span class="nt">&lt;command&gt;</span>set_spa_heater<span class="nt">&lt;/command&gt;</span>
+               <span class="nt">&lt;/mode&gt;</span>
+          <span class="nt">&lt;/spa_heat_modes&gt;</span>
+          <span class="nt">&lt;aux_types&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>TOGGLE<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Toggle<span class="nt">&lt;/name&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Light Dimmer Jandy Colors<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;items&gt;</span>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald<span class="nt">&lt;/items&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Light Dimmer Pentair<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;items&gt;</span>Off,White,Light Green,Green,Cyan,Blue,Lavender,Magenta,Light Magenta,Color<span class="nt">&lt;/items&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Light Dimmer Hayward Color Logic<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;items&gt;</span>Off,Voodoo Lounge,Deep Blue Sea,Afternoon Skies,Emerald,Sangria,Cloud<span class="nt">&lt;/items&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Light Dimmer Jandy LED Water Colors<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;items&gt;</span>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green<span class="nt">&lt;/items&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Light Dimmer Pentair Intellibright<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;items&gt;</span>Off,Sam,Party,Romance,Caribbean,American,California Sunset,Royal,Blue,Green,Red,White,Magenta<span class="nt">&lt;/items&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+               <span class="nt">&lt;aux_type&gt;</span>
+                    <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+                    <span class="nt">&lt;provides_selected_item&gt;</span>true<span class="nt">&lt;/provides_selected_item&gt;</span>
+                    <span class="nt">&lt;name&gt;</span>Dimmer<span class="nt">&lt;/name&gt;</span>
+                    <span class="nt">&lt;items&gt;</span>Off,25%,50%,75%,100%<span class="nt">&lt;/items&gt;</span>
+               <span class="nt">&lt;/aux_type&gt;</span>
+          <span class="nt">&lt;/aux_types&gt;</span>
+     <span class="nt">&lt;/capabilities&gt;</span>
+</code></pre></div>
+<h1 id='pool-conditionals'>Pool Conditionals</h1>
+
+<p>The Pool Proxy supports the following conditionals:</p>
+
+<p><code>IF_AIR_TEMPERATURE</code></p>
+
+<p><code>IF_BUTTON</code></p>
+
+<p><code>IF_POOL_SETPOINT</code></p>
+
+<p><code>IF_POOL_TEMPERATURE</code></p>
+
+<p><code>IF_PUMPMODE</code></p>
+
+<p><code>IF_SPA_MODE</code></p>
+
+<p><code>IF_SPA_SETPOINT</code></p>
+
+<p><code>IF_SPA_TEMPERATURE</code></p>
+<h1 id='pool-events'>Pool Events</h1>
+
+<p>The Pool Proxy fires the following events:</p>
+
+<p>AirTemperatureChanged</p>
+
+<p>AirModeChanged</p>
+
+<p>PoolHeatModeChanged</p>
+
+<p>PoolSetpointChanged</p>
+
+<p>PoolTemperatureChanged</p>
+
+<p>PumpModeChanged</p>
+
+<p>ScaleChanged</p>
+
+<p>SpaHeatModeChanged</p>
+
+<p>SpaModeChanged</p>
+
+<p>SpaSetpointChanged</p>
+
+<p>SpaTemperatureChanged</p>
+<h1 id='pool-proxy-commands'>Pool Proxy Commands</h1>
+
+<h2 id='pool-proxy-commands-set_aux_mode'>SET_AUX_MODE</h2>
+
+<p>Received from the proxy when the auxiliary mode has been changed.</p>
+
+<h3 id='pool-proxy-commands-set_aux_mode-name'>Name</h3>
+
+<p><code>SET_AUX_MODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>ID</code></td>
+<td>NUM</td>
+<td>ID value of the auxiliary to set.</td>
+</tr>
+<tr>
+<td><code>MODE</code></td>
+<td>STR</td>
+<td>ON/OFF</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_aux_mode-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-set_pool_heat_mode'>SET_POOL_HEAT_MODE</h2>
+
+<p>Received from the proxy when pool het mode has been changed.</p>
+
+<h3 id='pool-proxy-commands-set_pool_heat_mode-name'>Name</h3>
+
+<p><code>SET_POOL_HEATMODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>MODE</code></td>
+<td>STR</td>
+<td>ON/OFF</td>
+</tr>
+<tr>
+<td><code>ID</code></td>
+<td>INT</td>
+<td>Heat mode ID value</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_pool_heat_mode-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-set_pool_pump_mode'>SET_POOL_PUMP_MODE</h2>
+
+<p>Received from the proxy when pool pump mode has been changed.</p>
+
+<h3 id='pool-proxy-commands-set_pool_pump_mode-name'>Name</h3>
+
+<p><code>SET_POOL_PUMPMODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>PUMPMODE</code></td>
+<td>From : <code>&lt;pool_pumpmodes&gt;</code> capability.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_pool_pump_mode-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-set_pool_setpoint'>SET_POOL_SETPOINT</h2>
+
+<p>Received from the proxy when pool temperature etpoint has been changed.</p>
+
+<h3 id='pool-proxy-commands-set_pool_setpoint-name'>Name</h3>
+
+<p><code>SET_POOL_SETPOINT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SETPOINT</code></td>
+<td>INT</td>
+<td>Temperature Value</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_pool_setpoint-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-set_spa_heat_mode'>SET_SPA_HEAT_MODE</h2>
+
+<p>Received from the proxy when spa heat mode been changed.</p>
+
+<h3 id='pool-proxy-commands-set_spa_heat_mode-name'>Name</h3>
+
+<p><code>SET_SPA_HEATMODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>MODE</code></td>
+<td>STR</td>
+<td>ON/OFF</td>
+</tr>
+<tr>
+<td><code>ID</code></td>
+<td>INT</td>
+<td>Heat mode ID</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_spa_heat_mode-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-set_spa_pump_mode'>SET_SPA_PUMP_MODE</h2>
+
+<p>Received from the proxy when spa pump mode has been changed.</p>
+
+<h3 id='pool-proxy-commands-set_spa_pump_mode-name'>Name</h3>
+
+<p><code>SET_SPA_PUMPMODE ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>PUMPMODE</code></td>
+<td>From : <code>&lt;SPA_pumpmodes&gt;</code> capability.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_spa_pump_mode-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-set_spa_setpoint'>SET_SPA_SETPOINT</h2>
+
+<p>Received from the proxy when Spa Setpoint has been changed.</p>
+
+<h3 id='pool-proxy-commands-set_spa_setpoint-name'>Name</h3>
+
+<p><code>SET_SPA_SETPOINT ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SETPOINT</code></td>
+<td>INT</td>
+<td>Temperature</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-set_spa_setpoint-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-update_aux_item'>UPDATE_AUX_ITEM</h2>
+
+<p>Received from the proxy when the auxiliary id is changed in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
+
+<h3 id='pool-proxy-commands-update_aux_item-name'>Name</h3>
+
+<p><code>AUX_ITEM_UPDATED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>ID</code></td>
+<td>STR</td>
+<td>Current aux ID</td>
+</tr>
+<tr>
+<td><code>NEW_ID</code></td>
+<td>STR</td>
+<td>New aux ID</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-update_aux_item-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-add_aux_item'>ADD_AUX_ITEM</h2>
+
+<p>Received from the proxy when an auxiliary item is added by clicking on the + icon in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list </a>capability is set to true.</p>
+
+<h3 id='pool-proxy-commands-add_aux_item-name'>Name</h3>
+
+<p><code>AUX_ITEM_ADDED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>AUX_ID</code></td>
+<td>STR</td>
+<td>ID of the aux added</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-add_aux_item-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-proxy-commands-remove_aux_item'>REMOVE_AUX_ITEM</h2>
+
+<p>Received from the proxy when an auxiliary item is removed by clicking on the - icon in Auxiliary Controls card. The command should be received only when <a href="https://snap-one.github.io/docs-driverworks-proxyprotocol/#pool-capabilities">provides_aux_list</a> capability is set to true.</p>
+
+<h3 id='pool-proxy-commands-remove_aux_item-name'>Name</h3>
+
+<p><code>AUX_ITEM_ADDED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>ID</code></td>
+<td>STR</td>
+<td>ID of the aux removed</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-proxy-commands-remove_aux_item-returns'>Returns</h3>
+
+<p><code>None</code></p>
+<h1 id='pool-protocol-notifications'>Pool Protocol Notifications</h1>
+
+<h2 id='pool-protocol-notifications-air_temp_changed'>AIR_TEMP_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the air temperature has changed</p>
+
+<h3 id='pool-protocol-notifications-air_temp_changed-name'>Name</h3>
+
+<p><code>AIR_TEMP_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>TEMPERATURE</code></td>
+<td>NUM</td>
+<td>Temperature value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-air_temp_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-air_temp_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;AIR_TEMP_CHANGED&quot;, {TEMPERATURE = 99})</code></p>
+
+<h2 id='pool-protocol-notifications-aux_names_changed'>AUX_NAMES_CHANGED</h2>
+
+<p>This notification provides a way to override capabilities.</p>
+
+<h3 id='pool-protocol-notifications-aux_names_changed-name'>Name</h3>
+
+<p><code>AUX_NAMES_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th style="text-align: left">Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>AUXNAMES</code></td>
+<td>BOOL</td>
+<td style="text-align: left">XML UPDATE LIST - True</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-aux_names_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-aux_names_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>
+<span class="nt">&lt;items&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;item_text&gt;</span>Pool Cleaner<span class="nt">&lt;/item_text&gt;</span>
+        <span class="nt">&lt;type&gt;</span>Toggle<span class="nt">&lt;/type&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;item_text&gt;</span>Low Speed Pump<span class="nt">&lt;/item_text&gt;</span>
+        <span class="nt">&lt;type&gt;</span>Toggle<span class="nt">&lt;/type&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;item_text&gt;</span>Spa Spillover<span class="nt">&lt;/item_text&gt;</span>
+        <span class="nt">&lt;type&gt;</span>Toggle<span class="nt">&lt;/type&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/items&gt;</span>
+</code></pre></div>
+<h2 id='pool-protocol-notifications-auxmode_changed'>AUXMODE_CHANGED</h2>
+<p>Notification sent to the proxy to indicate whether Aux Buttons on the right side of the UI are On or Off.  ID corresponds to the button name ID in the BUTTONNAMES notify. Mode Y is On, N is Off.</p>
+<h3 id='pool-protocol-notifications-auxmode_changed-name'>Name</h3>
+
+<p><code>AUXMODE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>ID</code></td>
+<td>INT</td>
+<td>ID of auxiliary</td>
+</tr>
+<tr>
+<td><code>MODE</code></td>
+<td>STR</td>
+<td>ON/OFF</td>
+</tr>
+<tr>
+<td><code>SELECTED</code></td>
+<td>LIST</td>
+<td>For type LIST from <code>&lt;aux_types&gt; &lt;items&gt;</code> item selected if is provided by the device.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-auxmode_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-auxmode_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>
+<span class="nt">&lt;aux_state&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>6<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;selected&gt;</span>50%<span class="nt">&lt;/selected&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/aux_state&gt;</span>
+</code></pre></div>
+<h2 id='pool-protocol-notifications-has_air_changed'>HAS_AIR_CHANGED</h2>
+<p>Sent to the proxy to indicate that there is an outdoor air temperature available on this pool controller.  Determines whether the outdoor temperature is shown on the Navigator UI.</p>
+<h3 id='pool-protocol-notifications-has_air_changed-name'>Name</h3>
+
+<p><code>HAS_AIR_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>HASAIR</code></td>
+<td>BOOL</td>
+<td>(“True/False”) Is an outdoor air temperature available.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-has_air_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-has_air_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;HASAIR_CHANGED&quot;, {HASAIR = &quot;True&quot;})</code></p>
+
+<h2 id='pool-protocol-notifications-has_pool_changed'>HAS_POOL_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that there is a Pool available on this controller. If ‘False’, Pool Setpoint is unavailable to set.</p>
+
+<h3 id='pool-protocol-notifications-has_pool_changed-name'>Name</h3>
+
+<p><code>HAS_POOL_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>HASPOOL</code></td>
+<td>BOOL</td>
+<td>(“True/False”) Is a Pool available on this controller</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-has_pool_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-has_pool_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;HASPOOL_CHANGED&quot;, {HASPOOL = &quot;True&quot;}) </code></p>
+
+<h2 id='pool-protocol-notifications-has_spa_changed'>HAS_SPA_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that there is a Spa available on this controller. If ‘False’, Spa Setpoint is unavailable to set.</p>
+
+<h3 id='pool-protocol-notifications-has_spa_changed-name'>Name</h3>
+
+<p><code>HAS_SPA_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>HASSPA</code></td>
+<td>BOOL</td>
+<td>(“True/False”) Is a Spa available on this controller.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-has_spa_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-has_spa_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;HASSPA_CHANGED&quot;, {HASSPA = &quot;True&quot;})</code></p>
+
+<h2 id='pool-protocol-notifications-num_auxs_changed'>NUM_AUXS_CHANGED</h2>
+
+<p>Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator</p>
+
+<h3 id='pool-protocol-notifications-num_auxs_changed-name'>Name</h3>
+
+<p><code>NUM_AUXS_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>AUXS</code></td>
+<td>NUM</td>
+<td>Maximum number of auxiliaries.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-num_auxs_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-num_auxs_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;NUM_AUXS&quot;, {AUXS = 5}</code></p>
+
+<h2 id='pool-protocol-notifications-pool_pumpmodes_-list_changed'>POOL_PUMPMODES_ LIST_CHANGED</h2>
+
+<p>Sent to the proxy to indicate the number of Aux Buttons available in ComposerPro, and on Navigator</p>
+
+<h3 id='pool-protocol-notifications-pool_pumpmodes_-list_changed-name'>Name</h3>
+
+<p><code>POOL_PUMPMODES_LIST_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>POOL_PUMPMODES </code></td>
+<td>LIST</td>
+<td>Comma delimited list of Aux buttons.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-pool_pumpmodes_-list_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-protocol-notifications-pool_setpoint_changed'>POOL_SETPOINT_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the setpoint on the pool controller has changed.</p>
+
+<h3 id='pool-protocol-notifications-pool_setpoint_changed-name'>Name</h3>
+
+<p><code>POOL_SETPOINT_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>DType</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SETPOINT</code></td>
+<td>NUM</td>
+<td>New setpoint.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-pool_setpoint_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-pool_setpoint_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;POOL_SETPOINT_CHANGED&quot;, {SETPOINT = 23})</code></p>
+
+<h2 id='pool-protocol-notifications-pool_temp_changed'>POOL_TEMP_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the pool temperature has changed.</p>
+
+<h3 id='pool-protocol-notifications-pool_temp_changed-name'>Name</h3>
+
+<p><code>POOL_TEMP_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>TEMPERATURE</code></td>
+<td>NUM</td>
+<td>New temperature value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-pool_temp_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-pool_temp_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;POOL_TEMP_CHANGED&quot;, {TEMPERATURE = 78})</code></p>
+
+<h2 id='pool-protocol-notifications-pool_heatmode_changed'>POOL_HEATMODE_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the pool heat mode has changed.</p>
+
+<h3 id='pool-protocol-notifications-pool_heatmode_changed-name'>Name</h3>
+
+<p><code>POOL_HEATMODE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>XML</code></td>
+<td>HEATMODE.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-pool_heatmode_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-pool_heatmode_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>
+<span class="nt">&lt;pool_heatstate&gt;</span>
+   <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>set_pool_heater<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+   <span class="nt">&lt;/item&gt;</span>
+   <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>set_solar_heater<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+   <span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/pool_heatstate&gt;</span>`
+</code></pre></div>
+<h2 id='pool-protocol-notifications-pool_heatmode_list_changed'>POOL_HEATMODE_LIST_CHANGED</h2>
+<p>Sent to the proxy to indicate that the pool heat mode list has changed.</p>
+<h3 id='pool-protocol-notifications-pool_heatmode_list_changed-name'>Name</h3>
+
+<p><code>POOL_HEATMODE_LIST_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>XML</code></td>
+<td><code>POOL_HEATMODE.</code></td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-pool_heatmode_list_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-pool_heatmode_list_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;pool_heat_modes&gt;</span>
+    <span class="nt">&lt;mode&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;text&gt;</span>Heater<span class="nt">&lt;/text&gt;</span>
+        <span class="nt">&lt;command&gt;</span>set_pool_heater<span class="nt">&lt;/command&gt;</span>
+    <span class="nt">&lt;/mode&gt;</span>
+    <span class="nt">&lt;mode&gt;</span>
+        <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;text&gt;</span>Solar Heater<span class="nt">&lt;/text&gt;</span>
+        <span class="nt">&lt;command&gt;</span>set_solar_heater<span class="nt">&lt;/command&gt;</span>
+    <span class="nt">&lt;/mode&gt;</span>
+<span class="nt">&lt;/pool_heat_modes&gt;</span>
+</code></pre></div>
+<h2 id='pool-protocol-notifications-pump_mode_changed'>PUMP_MODE_CHANGED</h2>
+<p>Sent to the proxy to indicate that the pump mode has changed.</p>
+<h3 id='pool-protocol-notifications-pump_mode_changed-name'>Name</h3>
+
+<p><code>PUMP_MODE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>PUMPMODE</code></td>
+<td>BOOL</td>
+<td>From <code>&lt;pool_pumpmodes&gt;</code>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-pump_mode_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-pump_mode_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;PUMP_MODE_CHANGED&quot;, {PUMPMODE = &quot;True&quot;})</code></p>
+
+<h2 id='pool-protocol-notifications-scale_changed'>SCALE_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the Temperature scale has changed.</p>
+
+<h3 id='pool-protocol-notifications-scale_changed-name'>Name</h3>
+
+<p><code>SCALE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SCALE</code></td>
+<td>STR</td>
+<td>“C” or “F”</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-scale_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-scale_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;SCALE_CHANGED&quot;, {SCALE = &quot;C&quot;})</code></p>
+
+<h2 id='pool-protocol-notifications-spa_heatmode_changed'>SPA_HEATMODE_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the spa heat mode has changed.</p>
+
+<h3 id='pool-protocol-notifications-spa_heatmode_changed-name'>Name</h3>
+
+<p><code>SPA_HEATMODE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>XML</code></td>
+<td>HEATMODE.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-spa_heatmode_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-spa_heatmode_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>XML:
+id: from <span class="nt">&lt;command&gt;</span>
+mode: OFF | ON | ENABLED
+ 
+<span class="nt">&lt;spa_heatstate&gt;</span>
+    <span class="nt">&lt;item&gt;</span>
+        <span class="nt">&lt;id&gt;</span>set_spa_heater<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+    <span class="nt">&lt;/item&gt;</span>
+<span class="nt">&lt;/spa_heatstate&gt;</span>
+</code></pre></div>
+<h2 id='pool-protocol-notifications-spa_heatmodes_list_changed'>SPA_HEATMODES_LIST_CHANGED</h2>
+<p>This notification provides a way to override capabilities. It is sent to the proxy when the list of available spa heat modes has changed.</p>
+<h3 id='pool-protocol-notifications-spa_heatmodes_list_changed-name'>Name</h3>
+
+<p><code>SPA_HEATMODES_LIST_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SPA_HEATPMODES </code></td>
+<td>XML.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-spa_heatmodes_list_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-spa_heatmodes_list_changed-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>XML
+<span class="nt">&lt;spa_heat_modes&gt;</span>
+    <span class="nt">&lt;mode&gt;</span>
+        <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+        <span class="nt">&lt;text&gt;</span>Heater<span class="nt">&lt;/text&gt;</span>
+        <span class="nt">&lt;command&gt;</span>set_spa_heater<span class="nt">&lt;/command&gt;</span>
+    <span class="nt">&lt;/mode&gt;</span>
+<span class="nt">&lt;/spa_heat_modes&gt;</span>
+</code></pre></div>
+<h2 id='pool-protocol-notifications-spa_mode_changed'>SPA_MODE_CHANGED</h2>
+<p>Sent to the proxy to indicate whether the ‘Spa’ Aux button on the right side of the UI is On or Off.</p>
+<h3 id='pool-protocol-notifications-spa_mode_changed-name'>Name</h3>
+
+<p><code>SPA_MODE_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SPAMODE</code></td>
+<td>BOOL</td>
+<td>From <code>&lt;spa_pumpmodes&gt;</code>True/False</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-spa_mode_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-spa_mode_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;SPA_MODE_CHANGED&quot;, {SPAMODE = &quot;True&quot;}) </code></p>
+
+<h2 id='pool-protocol-notifications-spa_pumpmodes_list_changed'>SPA_PUMPMODES_LIST_CHANGED</h2>
+
+<p>This notification provides a way to override capabilities. It is sent to the proxy when the list of available spa pump modes has changed</p>
+
+<h3 id='pool-protocol-notifications-spa_pumpmodes_list_changed-name'>Name</h3>
+
+<p><code>SPA_PUMPMODES_LIST_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Description</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SPA_PUMPMODES </code></td>
+<td>LIST</td>
+<td>Comma delimited list of available spa pump modes.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-spa_pumpmodes_list_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h2 id='pool-protocol-notifications-spa_setpoint_changed'>SPA_SETPOINT_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the temperature setpoint on the spa controller has changed.</p>
+
+<h3 id='pool-protocol-notifications-spa_setpoint_changed-name'>Name</h3>
+
+<p><code>SPA_SETPOINT_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>SETPOINT</code></td>
+<td>NUM</td>
+<td>New setpoint value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-spa_setpoint_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-spa_setpoint_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;SPA_SETPOINT_CHANGED&quot;, {SETPOINT = 103}) </code></p>
+
+<h2 id='pool-protocol-notifications-spa_temp_changed'>SPA_TEMP_CHANGED</h2>
+
+<p>Sent to the proxy to indicate that the spa temperature has changed.</p>
+
+<h3 id='pool-protocol-notifications-spa_temp_changed-name'>Name</h3>
+
+<p><code>SPA_TEMP_CHANGED ()</code></p>
+
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td><code>TEMPERATURE</code></td>
+<td>NUM</td>
+<td>New temperature value.</td>
+</tr>
+</tbody></table>
+
+<h3 id='pool-protocol-notifications-spa_temp_changed-returns'>Returns</h3>
+
+<p><code>None</code></p>
+
+<h3 id='pool-protocol-notifications-spa_temp_changed-example'>Example</h3>
+
+<p><code>C4:SendToProxy(5001, &quot;SPA_TEMP_CHANGED&quot;, {TEMPERATURE = 105}) </code></p>
+<h1 id='pool-proxy-ui-requests'>Pool Proxy UI Requests</h1>
+
+<h2 id='pool-proxy-ui-requests-get_properties'>GET_PROPERTIES</h2>
+
+<p>Obtains the pool driver’s property information.</p>
+
+<p><h3 id='pool-proxy-ui-requests-get_properties-example'>Example</h3><div class="highlight"><pre class="highlight plaintext"><code>&lt;pool_properties&gt;
+    &lt;hasair&gt;True&lt;/hasair&gt;
+    &lt;hasspa&gt;True&lt;/hasspa&gt;
+    &lt;haspool&gt;True&lt;/haspool&gt;
+    &lt;aux_list&gt;
+        &lt;items&gt;
+            &lt;item&gt;
+                &lt;id&gt;1&lt;/id&gt;
+                &lt;item_text&gt;Auxiliary Control 1&lt;/item_text&gt;
+                &lt;type&gt;Toggle&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;2&lt;/id&gt;
+                &lt;item_text&gt;Auxiliary Control 2&lt;/item_text&gt;
+                &lt;type&gt;Toggle&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;3&lt;/id&gt;
+                &lt;item_text&gt;Auxiliary Control 3&lt;/item_text&gt;
+                &lt;type&gt;Toggle&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;4&lt;/id&gt;
+                &lt;item_text&gt;Auxiliary Control 4&lt;/item_text&gt;
+                &lt;type&gt;Toggle&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;5&lt;/id&gt;
+                &lt;item_text&gt;Jandy Color Aux 5&lt;/item_text&gt;
+                &lt;type&gt;Light Dimmer Jandy Colors&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;6&lt;/id&gt;
+                &lt;item_text&gt;Dimmer Aux 6&lt;/item_text&gt;
+                &lt;type&gt;Dimmer&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;7&lt;/id&gt;
+                &lt;item_text&gt;Auxiliary Control 7&lt;/item_text&gt;
+                &lt;type&gt;Toggle&lt;/type&gt;
+            &lt;/item&gt;
+            &lt;item&gt;
+                &lt;id&gt;8&lt;/id&gt;
+                &lt;item_text&gt;Auxiliary Control 8&lt;/item_text&gt;
+                &lt;type&gt;Toggle&lt;/type&gt;
+            &lt;/item&gt;
+        &lt;/items&gt;
+    &lt;/aux_list&gt;
+&lt;/pool_properties&gt;
+</code></pre></div>
+<h2 id='pool-proxy-ui-requests-get_state'>GET_STATE</h2>
+<p>Obtains the pool’s state.</p>
+<h3 id='pool-proxy-ui-requests-get_state-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code><span class="nt">&lt;pool_state&gt;</span>
+    <span class="nt">&lt;spamode&gt;</span>Off<span class="nt">&lt;/spamode&gt;</span>
+    <span class="nt">&lt;pumpmode&gt;</span>On<span class="nt">&lt;/pumpmode&gt;</span>
+    <span class="nt">&lt;pool_setpoint&gt;</span>86<span class="nt">&lt;/pool_setpoint&gt;</span>
+    <span class="nt">&lt;spa_setpoint&gt;</span>102<span class="nt">&lt;/spa_setpoint&gt;</span>
+    <span class="nt">&lt;pool_temp&gt;</span>79<span class="nt">&lt;/pool_temp&gt;</span>
+    <span class="nt">&lt;spa_temp&gt;</span>-1<span class="nt">&lt;/spa_temp&gt;</span>
+    <span class="nt">&lt;scale&gt;</span>F<span class="nt">&lt;/scale&gt;</span>
+    <span class="nt">&lt;air_temp&gt;</span>79<span class="nt">&lt;/air_temp&gt;</span>
+    <span class="nt">&lt;aux_state&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>3<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>4<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>5<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>6<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+            <span class="nt">&lt;selected&gt;</span>75%<span class="nt">&lt;/selected&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>7<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>8<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>9<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>10<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>11<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>12<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>13<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>14<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>15<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;/aux_state&gt;</span>
+    <span class="nt">&lt;pool_heatstate&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>set_pool_heater<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>ON<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>set_solar_heater<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;/pool_heatstate&gt;</span>
+    <span class="nt">&lt;spa_heatstate&gt;</span>
+        <span class="nt">&lt;item&gt;</span>
+            <span class="nt">&lt;id&gt;</span>set_spa_heater<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;mode&gt;</span>OFF<span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;/item&gt;</span>
+    <span class="nt">&lt;/spa_heatstate&gt;</span>
+<span class="nt">&lt;/pool_state&gt;</span>
+</code></pre></div>
+<h2 id='pool-proxy-ui-requests-get_setup'>GET_SETUP</h2>
+<p>Obtains the driver’s setup information.</p>
+<h3 id='pool-proxy-ui-requests-get_setup-example'>Example</h3><div class="highlight"><pre class="highlight xml tab-xml"><code>pool_setup&gt;
+    <span class="nt">&lt;temp_min&gt;</span>34<span class="nt">&lt;/temp_min&gt;</span>
+    <span class="nt">&lt;temp_max&gt;</span>104<span class="nt">&lt;/temp_max&gt;</span>
+    <span class="nt">&lt;pool_pumpmodes&gt;</span>Off,On<span class="nt">&lt;/pool_pumpmodes&gt;</span>
+    <span class="nt">&lt;spa_pumpmodes&gt;</span>Off,On<span class="nt">&lt;/spa_pumpmodes&gt;</span>
+    <span class="nt">&lt;max_aux&gt;</span>15<span class="nt">&lt;/max_aux&gt;</span>
+    <span class="nt">&lt;pool_heat_modes&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;text&gt;</span>Heater<span class="nt">&lt;/text&gt;</span>
+            <span class="nt">&lt;command&gt;</span>set_pool_heater<span class="nt">&lt;/command&gt;</span>
+        <span class="nt">&lt;/mode&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>
+            <span class="nt">&lt;id&gt;</span>2<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;text&gt;</span>Solar Heater<span class="nt">&lt;/text&gt;</span>
+            <span class="nt">&lt;command&gt;</span>set_solar_heater<span class="nt">&lt;/command&gt;</span>
+        <span class="nt">&lt;/mode&gt;</span>
+    <span class="nt">&lt;/pool_heat_modes&gt;</span>
+    <span class="nt">&lt;spa_heat_modes&gt;</span>
+        <span class="nt">&lt;mode&gt;</span>
+            <span class="nt">&lt;id&gt;</span>1<span class="nt">&lt;/id&gt;</span>
+            <span class="nt">&lt;text&gt;</span>Heater<span class="nt">&lt;/text&gt;</span>
+            <span class="nt">&lt;command&gt;</span>set_spa_heater<span class="nt">&lt;/command&gt;</span>
+        <span class="nt">&lt;/mode&gt;</span>
+    <span class="nt">&lt;/spa_heat_modes&gt;</span>
+    <span class="nt">&lt;aux_types&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>TOGGLE<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Toggle<span class="nt">&lt;/name&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Light Dimmer Jandy Colors<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;items&gt;</span>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald Green,Emerald Rose,Magenta,Garnet Red,Violet,Color Splash<span class="nt">&lt;/items&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Light Dimmer Pentair<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;items&gt;</span>Off,White,Light Green,Green,Cyan,Blue,Lavender,Magenta,Light Magenta,Color Splash<span class="nt">&lt;/items&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Light Dimmer Hayward Color Logic<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;items&gt;</span>Off,Voodoo Lounge,Deep Blue Sea,Afternoon Skies,Emerald,Sangria,Cloud White,Twilight,Tranquility,Gemstone,USA,Mardi Gras,Cool Cabaret<span class="nt">&lt;/items&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Light Dimmer Jandy LED Water Colors<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;items&gt;</span>Off,Alpine White,Sky Blue,Cobalt Blue,Caribbean Blue,Spring Green,Emerald Green,Emerald Rose,Magenta,Violet,Slow Color Splash,Fast Color Splash,USA,Fat Tuesday,Disco Tech<span class="nt">&lt;/items&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;provides_selected_item&gt;</span>false<span class="nt">&lt;/provides_selected_item&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Light Dimmer Pentair Intellibright<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;items&gt;</span>Off,Sam,Party,Romance,Caribbean,American,California Sunset,Royal,Blue,Green,Red,White,Magenta<span class="nt">&lt;/items&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+        <span class="nt">&lt;aux_type&gt;</span>
+            <span class="nt">&lt;type&gt;</span>LIST<span class="nt">&lt;/type&gt;</span>
+            <span class="nt">&lt;provides_selected_item&gt;</span>true<span class="nt">&lt;/provides_selected_item&gt;</span>
+            <span class="nt">&lt;name&gt;</span>Dimmer<span class="nt">&lt;/name&gt;</span>
+            <span class="nt">&lt;items&gt;</span>Off,25%,50%,75%,100%<span class="nt">&lt;/items&gt;</span>
+        <span class="nt">&lt;/aux_type&gt;</span>
+    <span class="nt">&lt;/aux_types&gt;</span>
+<span class="nt">&lt;/pool_setup&gt;</span>
+</code></pre></div></p>
+<h1 id='pool-proxy-variables'>Pool Proxy Variables</h1>
+
+<h2 id='pool-proxy-variables-pool-variables'>POOL VARIABLES</h2>
+
+<p>The Pool Proxy supports the following variables:</p>
+
+<p><code>AIR_TEMPERATURE</code> integer</p>
+
+<p><code>POOL_HEATMODE</code> string</p>
+
+<p><code>POOL_SETPOINT</code> integer</p>
+
+<p><code>POOL_TEMPERATURE</code> integer</p>
+
+<p><code>PUMPMODE</code> string</p>
+
+<p><code>SCALE</code> string</p>
+
+<p><code>SPAMODE</code> string</p>
+
+<p><code>SPA_HEATMODE</code> string</p>
+
+<p><code>SPA_SETPOINT</code> integer</p>
+
+<p><code>SPA_TEMPERATURE</code> integer</p>
+
+      </div>
+      <div class="dark-box">
+          <div class="lang-selector">
+                <a href="#" data-language-name="lua">lua</a>
+          </div>
+      </div>
+    </div>
+  </body>
+</html>

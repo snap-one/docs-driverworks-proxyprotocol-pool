@@ -1,2 +1,3 @@
-# docs-driverworks-proxyprotocol-pool
- Pool Proxy SDK documentation
+# Driverworks Proxy/Protocol Guide - pool
+
+Pool Proxy SDK documentation
